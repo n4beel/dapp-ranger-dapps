@@ -29,7 +29,7 @@ async function getDapps() {
 
 async function doTask() {
     let results = await getDapps();
-    const data = [["Network(s)", "Category", "User Activity (30 days)"]]
+    const data = [["Name", "Network(s)", "Category", "User Activity (30 days)"]]
 
     for (let i = 0; i < results.length; i++) {
         data.push([
